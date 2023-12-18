@@ -1,0 +1,144 @@
+*{
+    margin: 0 0;
+    padding: 0 0;
+    background-color: beige;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    margin-bottom: 2rem;
+}
+.game-field{
+    display: flex;
+    flex-direction: column;
+}
+.player1{
+    width: 100px;
+    height: 100px;
+    background-color: bisque;
+    border: 2px solid yellow;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 70px;
+        height: 70px;
+        background-color: transparent;
+    }
+}
+
+.player2{
+    width: 100px;
+    height: 100px;
+    background-color: #0f2b18;
+    border: 2px solid rgb(25, 196, 173);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 70px;
+        height: 70px;
+        background-color: transparent;
+    }
+}
+
+.point-counter{
+    margin-top: 1rem;
+    width: fit-content;
+    display: flex;
+    padding: 0 1rem;
+    gap: 10rem;
+    p{
+        font-size: 1.5rem;
+    }
+}
+
+.border{
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin-top: .5rem;
+}
+
+.road{
+    position: relative;
+    margin: auto auto;
+    width: 55rem;
+    height: 15rem;
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    img{
+        width: 6rem;
+        position: absolute;
+    }
+}
+
+.horse1{
+    top: 15px;
+    left: 5px;
+    transition: left 0.5s ease-in-out; /* Apply transition for left property */
+}
+.horse2{
+    bottom: 15px;
+    left: 5px;
+    transition: left 0.5s ease-in-out; /* Apply transition for left property */
+}
+
+
+
+.lines{
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 100px;
+    gap: 10px;
+    .line{
+        width: 100px;
+        height: 2px;
+        background-color: #000;
+    }
+}
+
+.control{
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    gap: 2rem;
+    button{
+        width: 10rem;
+        height: 3rem;
+        border-style: none;
+        background-color: rgb(209, 104, 19);
+        border-radius: 10px;
+        color: aliceblue;
+    }
+    button:hover{
+        background-color: rgb(226, 134, 43);
+        transition: .2s;
+    }
+}
+
+.center{
+    text-align: center;
+    img{
+        width: 8rem;
+        margin-bottom: 1rem;
+    }
+}
+
+
+.winner-message{
+    text-transform: uppercase;
+    position: fixed;
+    left: 425px;
+    bottom: 330px;
+    z-index: 2;
+    background-color: #fae106;
+    font-size: 2rem;
+}
+

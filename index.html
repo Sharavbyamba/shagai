@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шагайн наадгай</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="game-field">
+        <div class="header">
+            <div class="player1">
+                <img src="./img/profile.png" alt="">
+            </div>
+            <div class="point-counter">
+                <section>
+                    <p>Тоглогч 1</p>
+                    <div class="border">
+                        <p id="player1Score">0 морь</p>
+                    </div>
+                </section>
+                <section>
+                    <p>Тоглогч 2</p>
+                    <div class="border">
+                        <p id="player2Score">0 морь</p>
+                    </div>
+                </section>
+            </div>
+            <div class="player2">
+                <img src="./img/man.png" alt="">
+            </div>
+        </div>
+        <div class="winner-message" id="winnerMessage"></div>
+        <div class="road">
+            <img class="horse1" src="./img/horse1.png" alt="">
+            <div class="lines">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <img src="./img/horse2.png" alt="" class="horse2">
+        </div>
+        <div class="control">
+            <button class="p1" onclick="shagaiOrhih(1)">Шагай орхих</button>
+            <div class="center">
+                <div class="shagai">
+                    <img id="image1" src="./img/honi.jpg" alt="">
+                    <img id="image2" src="./img/mori.jpg" alt="">
+                    <img id="image3" src="./img/temee.jpg" alt="">
+                    <img id="image4" src="./img/ymaa.jpg" alt="">
+                </div>
+                <button class="start" onclick="resetGame()">Эхлэх</button>
+            </div>
+            <button class="p2" onclick="shagaiOrhih(2)">Шагай орхих</button>
+        </div>
+    </div>
+</body>
+<script src="./script.js" ></script>
+</html>
